@@ -4,9 +4,15 @@ let sum = firstCard+secondCard
 let hasBlackJack = false
 let isAlive = true
 let message = ""
-let messEl = document.getElementById("mess-el")
-let cardEl = document.getElementById("cards-el")
-let sumEl = document.getElementById("sum-el")
+let messEl = document.querySelector('#mess-el')
+let cardEl = document.querySelector('#cards-el')
+let sumEl = document.querySelector('#sum-el')
+
+function newCard(){
+    console.log("Draw a new Card : ")
+    let nCard = 7
+    sum += nCard 
+}
 
 function startGame(){
     cardEl.textContent = "Cards : " +firstCard +"  " +secondCard
