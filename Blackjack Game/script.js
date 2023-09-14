@@ -17,6 +17,7 @@ function newCard(){
     console.log("Draw a new Card : ")
     let nCard = 7
     sum += nCard 
+    cards.push(nCard)
     renderGame()
 }
 
