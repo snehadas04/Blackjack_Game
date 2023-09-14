@@ -1,5 +1,6 @@
 let firstCard = 11
 let secondCard = 10
+let cards = [firstCard,secondCard]
 let sum = firstCard+secondCard
 let hasBlackJack = false
 let isAlive = true
@@ -8,14 +9,20 @@ let messEl = document.querySelector('#mess-el')
 let cardEl = document.querySelector('#cards-el')
 let sumEl = document.querySelector('#sum-el')
 
+function startGame(){
+    renderGame()
+}
+
 function newCard(){
     console.log("Draw a new Card : ")
     let nCard = 7
     sum += nCard 
+    renderGame()
 }
 
-function startGame(){
-    cardEl.textContent = "Cards : " +firstCard +"  " +secondCard
+function renderGame(){
+
+    cardEl.textContent = "Cards : " +cards[0] +"  " +cards[1]
     sumEl.textContent = "Sum : " +sum
 
     if(sum <= 20){
@@ -32,6 +39,7 @@ function startGame(){
         isAlive = false
     }
     messEl.textContent = message
+
     console.log(message)
     console.log(hasBlackJack)
     console.log(isAlive)
