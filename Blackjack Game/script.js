@@ -8,13 +8,14 @@ let messEl = document.querySelector('#mess-el')
 let cardEl = document.querySelector('#cards-el')
 let sumEl = document.querySelector('#sum-el')
 
+function startGame(){
+    renderGame()
+}
+
 function newCard(){
     console.log("Draw a new Card : ")
     let nCard = 7
     sum += nCard 
-}
-
-function startGame(){
     renderGame()
 }
 
@@ -36,6 +37,7 @@ function renderGame(){
         isAlive = false
     }
     messEl.textContent = message
+
     console.log(message)
     console.log(hasBlackJack)
     console.log(isAlive)
