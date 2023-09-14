@@ -15,6 +15,10 @@ function newCard(){
 }
 
 function startGame(){
+    renderGame()
+}
+
+function renderGame(){
     cardEl.textContent = "Cards : " +firstCard +"  " +secondCard
     sumEl.textContent = "Sum : " +sum
 
