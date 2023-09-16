@@ -22,6 +22,7 @@ function newCard(){
 }
 
 function renderGame(){
+    cardEl.textContent
 
     cardEl.textContent = "Cards : " +cards[0] +"  " +cards[1]
     sumEl.textContent = "Sum : " +sum
