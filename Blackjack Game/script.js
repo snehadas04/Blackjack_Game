@@ -22,10 +22,10 @@ function newCard(){
 }
 
 function renderGame(){
-    cardEl.textContent = "cards : "
-    for(let i=0;i<cards.length;i+=1)
-
-    cardEl.textContent = "Cards : " +cards[0] +"  " +cards[1]
+    cardEl.textContent = "Cards : "
+    for(let i=0;i<cards.length;i++){
+        cardEl.textContent += cards[i] + " "
+    }
     sumEl.textContent = "Sum : " +sum
 
     if(sum <= 20){
