@@ -10,7 +10,16 @@ let cardEl = document.querySelector('#cards-el')
 let sumEl = document.querySelector('#sum-el')
 
 function getRendonCard(){
-    return Math.floor(Math.random()*13)+1
+    let cardNo = Math.floor(Math.random()*13)+1
+    {
+        if (cardNo == 1){
+            return 11
+        }
+        else if (cardNo>10){
+            return 10
+        }
+    }
+    return cardNo
 }
 
 function startGame(){
